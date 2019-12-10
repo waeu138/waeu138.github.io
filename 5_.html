@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      button{width:100px;
+             height:30px;
+             border:1px solid red;}
+      img{border:2px solid red;}
+    </style>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#btn1').click(function(){
+          $('#snow').animate({marginLeft:"+=300px"},"slow");
+          $('#snow').animate({marginLeft:"-=300px"},"slow");
+        });
+        $('#btn1').click(function(){
+          $('img').animate({height:"toggle"},"slow");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <img src="img.jpg" id="snow" width="400" height="265"><br>
+    <b>한국의 겨울</b> 야구하게 빨리 사라져라!!!!!!!<br>
+    <button id="btn1">좌우 이동</button>
+    <button id="btn2">이미지 토글</button>
+  </body>
+</html>

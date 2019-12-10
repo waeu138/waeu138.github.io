@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .special{
+        width: 300px;
+        height: 180px;
+        border: 2px solid red;
+        float: left;
+      }
+        p{
+            font-size: 25px;
+        }
+        .box{
+            padding: 0% 5%;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('p').click(function(){
+          $(this).hide();
+        });
+        $('img').click(function(){
+          $(this).hide();
+        });
+      });
+    </script>
+  </head>
+  <body>
+  <div class="box">
+   <h1>글자클릭</h1>
+    <p>click me!</p>
+    <p>click me!</p>
+    <p>click me!</p>
+    <p>click me!</p>
+    </div>
+  </body>
+</html>

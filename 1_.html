@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #gallery{
+        width: 950px;
+        height: 180px;
+        background: skyblue;
+        border-radius: 15px
+        border: 2px solid black;
+          cursor: pointer;
+      }
+      ul{
+        list-style: none;
+      }
+      ul li{
+        display: inline;
+        float: left;
+        padding: 10px 10px;
+      }
+      .bigpic{
+        position: absolute;
+        display: none;
+        top: 350px;
+        left: 60px;
+        width: 400px;
+        height: 340px;
+      }
+        .smallpic{
+        width: 200px;
+        height: 140px;
+      }
+        .box{
+            padding: 0% 5%;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.3.1.js">
+    </script>
+    <script>
+      $(document).ready(function(){
+        $("#s1").click(function(){
+          $("#big1").fadeIn(1000);
+        });
+        $("#big1").click(function(){
+          $("#big1").fadeOut(1000);
+        });
+        $("#s2").click(function(){
+          $("#big2").fadeIn(1000);
+        });
+        $("#big2").click(function(){
+          $("#big2").fadeOut(1000);
+        });
+        $("#s3").click(function(){
+          $("#big3").fadeIn(1000);
+        });
+        $("#big3").click(function(){
+          $("#big3").fadeOut(1000);
+        });
+        $("#s4").click(function(){
+          $("#big4").fadeIn(1000);
+        });
+        $("#big4").click(function(){
+          $("#big4").fadeOut(1000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>FadeInOut</h1>
+    <h3>사용법</h3>
+    <ol>
+      <li>작은 이미지를 클릭하면 큰 이미지가 나타납니다.</li>
+      <li>큰 이미지를 클릭하면 큰 이미지가 사라집니다.</li>
+    </ol>
+    <div id="gallery">
+      <ul>
+        <li>
+      <img src="img.jpg" id="s1" class="smallpic" width="200" height="100"><br>
+      <img src="img.jpg" id="big1" class="bigpic" width="500" height="400"><br>
+</li><li>
+      <img src="img.jpg" id="s2" class="smallpic" width="200" height="100"><br>
+      <img src="img.jpg" id="big2" class="bigpic" width="500" height="400"><br>
+</li><li>
+      <img src="img.jpg" id="s3" class="smallpic" width="200" height="100"><br>
+      <img src="img.jpg" id="big3" class="bigpic" width="500" height="400"><br>
+</li><li>
+      <img src="img.jpg" id="s4" class="smallpic" width="200" height="100"><br>
+      <img src="img.jpg" id="big4" class="bigpic" width="500" height="400"><br>
+    </li>
+    </div>
+  </body>
+</html>

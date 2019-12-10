@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#hide').click(function(){
+          $('.special').hide();
+        });
+        $('#show').click(function(){
+          $('.special').show();
+        });
+        $('#toggle').click(function(){
+          $('.special').toggle();
+        });
+      });
+    </script>
+    <style>
+      .special{
+        width: 300px;
+        height: 180px;
+        border: 2px solid red;
+        float: left;
+      }
+        .box{
+            padding: 0% 5%;
+        }
+    </style>
+  </head>
+  <body>
+  <div class="box">
+   <h1>toggle</h1>
+        <form>
+          <input type="button" id="hide" value="그림숨기기">
+          <input type="button" id="show" value="그림보이기">
+          <input type="button" id="toggle" value="그림토글">
+        </form>
+        <div class="special" id="sun">
+          <img src="img.jpg" width="300" height="180">
+        </div>
+    </div>
+  </body>
+</html>
