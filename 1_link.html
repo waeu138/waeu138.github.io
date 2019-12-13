@@ -9,12 +9,9 @@
       img{width:100px;
           height:100px;}
     </style>
-    <script>
+   <script>
       $(document).ready(function(){
-        $('#spring').click(function(){ $('#spring>img').toggle(); });
-        $('#summer').click(function(){ $('#summer>img').toggle(); });
-        $('#fall').click(function(){ $('#fall>img').toggle(); });
-        $('#winter').click(function(){ $('#winter>img').toggle(); });
+        $('img').click(function(){ $(this).hide(); });
       });
     </script>
   </head>
