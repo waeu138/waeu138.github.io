@@ -3,11 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
       *{list-style:none;}
       img{width:100px;
           height:100px;}
     </style>
+    <script>
+      $(document).ready(function(){
+       $('#u1').click(function(){
+          $('.u1l').fadeIn(1000);
+        });
+       $('#u1').click(function(){
+          $('.u1l').fadeOut(1000);
+        });
+        
+       $('#u2').click(function(){
+          $('.u2l').fadeIn(1000);
+        });
+       $('#u2').click(function(){
+          $('.u2l').fadeOut(1000);
+        });
+        
+       $('#u3').click(function(){
+          $('.u3l').fadeIn(1000);
+        });
+       $('#u3').click(function(){
+          $('.u3l').fadeOut(1000);
+        });
+        
+       $('#u4').click(function(){
+          $('.u4l').fadeIn(1000);
+        });
+       $('#u4').click(function(){
+          $('.u4l').fadeOut(1000);
+        });
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -15,25 +47,25 @@
     </header>
     <section>
      <article>
-      <ul>-운동
-        <li>요가<br><img src="ex1.PNG"></li>
-        <li>러닝<br><img src="ex2.PNG"></li>
-        <li>수영<br><img src="ex3.PNG"></li>
+      <ul id="u1">-운동
+        <li class="u1l">요가<br><img src="ex1.PNG"></li>
+        <li class="u1l">러닝<br><img src="ex2.PNG"></li>
+        <li class="u1l">수영<br><img src="ex3.PNG"></li>
       </ul><hr>
-      <ul>-청소용품
-        <li>청소기<br><img src="clean1.PNG"></li>
-        <li>물걸레<br><img src="clean2.PNG"></li>
-        <li>분무기<br><img src="clean3.PNG"></li>
+      <ul id="u2">-청소용품
+        <li class="u2l">청소기<br><img src="clean1.PNG"></li>
+        <li class="u2l">물걸레<br><img src="clean2.PNG"></li>
+        <li class="u2l">분무기<br><img src="clean3.PNG"></li>
       </ul><hr>
-      <ul>-주방용품
-        <li>냄비<br><img src="kitchen1.PNG"></li>
-        <li>국자<br><img src="kitchen2.PNG"></li>
-        <li>그릇<br><img src="kitchen3.PNG"></li>
+      <ul id="u3">-주방용품
+        <li class="u3l">냄비<br><img src="kitchen1.PNG"></li>
+        <li class="u3l">국자<br><img src="kitchen2.PNG"></li>
+        <li class="u3l">그릇<br><img src="kitchen3.PNG"></li>
       </ul><hr>
-      <ul>-가구
-        <li>옷장<br><img src="room1.PNG"></li>
-        <li>침대<br><img src="room2.PNG"></li>
-        <li>소파<br><img src="room3.PNG"></li>
+      <ul id="u4">-가구
+        <li class="u4l">옷장<br><img src="room1.PNG"></li>
+        <li class="u4l">침대<br><img src="room2.PNG"></li>
+        <li class="u4l">소파<br><img src="room3.PNG"></li>
       </ul>
     </article>
     </section>
