@@ -11,7 +11,10 @@
     </style>
     <script>
       $(document).ready(function(){
-        $('img').click(function(){ $(this).toggle(); });
+        $('#spring').click(function(){ $('#spring>img').toggle(); });
+        $('#summer').click(function(){ $('#summer>img').toggle(); });
+        $('#fall').click(function(){ $('#fall>img').toggle(); });
+        $('#winter').click(function(){ $('#winter>img').toggle(); });
       });
     </script>
   </head>
@@ -21,22 +24,22 @@
     </header>
     <section>
       <article>
-          <ul>-봄
+          <ul id="spring">-봄
               <li>딸기<br><img src="strawberry.jpg"></li>
               <li>메론<br><img src="melon.jpg"></li>
               <li>키위<br><img src="kiwi.jpg"></li>
           </ul><hr>
-          <ul>-여름
+          <ul id="summer">-여름
               <li>수박<br><img src="watermelon.jpg"></li>
               <li>포도<br><img src="grape.jpg"></li>
               <li>복숭아<br><img src="peach.jpg"></li>
           </ul><hr>
-          <ul>-가을
+          <ul id="fall">-가을
             <li>사과<br><img src="apple.jpg"></li>
             <li>배<br><img src="pear.jpg"></li>
             <li>감<br><img src="persimmon.jpg"></li>
           </ul><hr>
-          <ul>-겨울
+          <ul id="winter">-겨울
             <li>귤<br><img src="tangerine.jpg"></li>
             <li>한라봉<br><img src="halla.jpg"></li>
             <li>유자<br><img src="yuja.jpg"></li>
